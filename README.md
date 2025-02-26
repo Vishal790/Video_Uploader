@@ -20,39 +20,40 @@ A **full-stack application** that allows users to **upload, compress, store, and
 - **Version Control**: Git & GitHub  
 
 ## 📂 Folder Structure
-Video-Uploader/
-│── public/
-│── server/
-│ ├── config/
-│ ├── controllers/
-│ ├── routes/
-│ ├── services/
-│ ├── uploads/
-│ ├── .env
-│ ├── firebase-key.json
-│ ├── app.js
-│ ├── package.json
-│── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── Uploader.jsx
-│ │ ├── VideoList.jsx
-│ ├── pages/
-│ │ ├── Video.jsx
-│ ├── services/
-│ │ ├── api.js
-│ ├── App.js
-│ ├── main.jsx
-│ ├── App.css
-│ ├── index.css
-│── .gitignore
-│── eslint.config.js
-│── index.html
-│── package.json
-│── postcss.config.js
-│── README.md
-│── tailwind.config.js
-│── vite.config.js
+
+Video-Uploader/  
+│── public/  
+│── server/  
+│   ├── config/  
+│   ├── controllers/  
+│   ├── routes/  
+│   ├── services/  
+│   ├── uploads/  
+│   ├── .env  
+│   ├── firebase-key.json  
+│   ├── app.js  
+│   ├── package.json  
+│── src/  
+│   ├── assets/  
+│   ├── components/  
+│   │   ├── Uploader.jsx  
+│   │   ├── VideoList.jsx  
+│   ├── pages/  
+│   │   ├── Video.jsx  
+│   ├── services/  
+│   │   ├── api.js  
+│   ├── App.js  
+│   ├── main.jsx  
+│   ├── App.css  
+│   ├── index.css  
+│── .gitignore  
+│── eslint.config.js  
+│── index.html  
+│── package.json  
+│── postcss.config.js  
+│── README.md  
+│── tailwind.config.js  
+│── vite.config.js  
 
 
 
