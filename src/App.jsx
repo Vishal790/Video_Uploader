@@ -11,7 +11,10 @@ function App() {
   useEffect(() => {
     const fetchVideos = async () => {
       const data = await getVideos();
-      console.log("videos", data);
+      console.log(
+        "videos",
+        data.sort((a, b) => b.uploadedAt - a.uploadedAt)
+      );
       setVideos(data);
     };
     fetchVideos();

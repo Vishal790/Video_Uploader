@@ -25,7 +25,7 @@ const Uploader = ({ setVideos }) => {
     const toastId = toast.loading("Uploading video...");
     try {
       const uploadedVideo = await uploadVideo(file);
-      setVideos((prev) => [...prev, uploadedVideo]);
+      setVideos((prev) => [uploadedVideo, ...prev]);
       toast.success("Upload successful!", { id: toastId });
       setFile(null);
     } catch (error) {
