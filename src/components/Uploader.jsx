@@ -10,9 +10,18 @@ const Uploader = ({ setVideos }) => {
     setFile(acceptedFiles[0]);
   }, []);
 
+  const onDropRejected = useCallback(() => {
+    toast.error("Invalid file type. Please upload a video.");
+  }, []);
+
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: "video/*",
+    onDropRejected,
+    accept: {
+      "video/mp4": [".mp4"],
+      "video/webm": [".webm"],
+      "video/ogg": [".ogg"],
+    },
     multiple: false,
   });
 

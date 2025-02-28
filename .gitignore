@@ -1,1 +1,3 @@
 node_modules
+server/firebase-key.json
+server/.env
